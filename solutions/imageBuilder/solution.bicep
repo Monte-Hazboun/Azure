@@ -36,16 +36,16 @@ param ImageStorageAccountType string = 'Standard_LRS'
 param Location string = deployment().location
 
 @description('The name for the storage account containing the scripts & application installers.')
-param StorageAccountName string = 'stshdsvcdeu000'
+param StorageAccountName string = 'mehimagebuilder000'
 
 @description('The resource group name for the storage account containing the scripts & application installers.')
-param StorageAccountResourceGroupName string = 'rg-shd-svc-d-eu-000'
+param StorageAccountResourceGroupName string = 'ImageBuilderTest'
 
 @description('The name of the container in the storage account containing the scripts & application installers.')
 param StorageContainerName string = 'artifacts'
 
 @description('The subnet name for the custom virtual network.')
-param SubnetName string = 'Clients'
+param SubnetName string = 'subnet-qas-web'
 
 param Tags object = {}
 
@@ -56,10 +56,10 @@ param Timestamp string = utcNow('yyyyMMddhhmmss')
 param VirtualMachineSize string = 'Standard_DS2_v2'
 
 @description('The name for the custom virtual network.')
-param VirtualNetworkName string = 'vnet-shd-net-d-eu-000'
+param VirtualNetworkName string = 'vnet-nprod'
 
 @description('The resource group name for the custom virtual network.')
-param VirtualNetworkResourceGroupName string = 'rg-shd-net-d-eu-000'
+param VirtualNetworkResourceGroupName string = 'rg-nprd-nw'
 
 
 var LocationShortNames = {
